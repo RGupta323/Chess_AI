@@ -48,4 +48,9 @@ public class Pawn extends ChessPiece {
         a.add(c);
 
     }
+
+    //methods for capture
+    public boolean canCapture(List<ChessPosition<Integer>> lis){
+        return false;
+    }
 }
