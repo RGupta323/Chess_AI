@@ -53,4 +53,9 @@ public class Pawn extends ChessPiece {
     public boolean canCapture(List<ChessPosition<Integer>> lis){
         return false;
     }
+
+    //toString method to show what type it is...
+    public String toString(){
+        return "Pawn";
+    }
 }
