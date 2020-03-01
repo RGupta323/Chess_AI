@@ -51,8 +51,21 @@ public class Pawn extends ChessPiece {
     }
 
     //methods for capture
-    public boolean canCapture(List<ChessPosition<Integer>> lis){
-        return false;
+    public boolean canCapture(String[][] board){
+       if(color=="black" || color.equals("black")){
+           //pawns can capture diagonally, but black pawns are located at the end
+           //of the board, so
+           //capture diagonal left: (x_pos-1, y_pos-1) but pawns at the end of the
+           //capture diagonal right: (x_pos+1, y_pos+1)
+           //board can only capture diagonally one way
+           ChessPosition<Integer> diagonal_left=new ChessPosition(x_pos-1, y_pos-1);
+           ChessPosition<Integer> diagonal_right=new ChessPosition<>(x_pos+1, y_pos+1);
+
+           if(diagonal_left.x>=0 && diagonal_left.x<8){
+               
+           }
+
+       }
     }
 
     //toString method to show what type it is...

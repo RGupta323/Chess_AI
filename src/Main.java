@@ -5,7 +5,7 @@ import java.util.List;
 public class Main {
     public static String[][] chessboard;
     public static void main(String[] args){
-        Pawn p = new Pawn("black", 1, 0);
+        //Pawn p = new Pawn("black", 1, 0);
 
         initializeChessboard();
         printBoard(chessboard);
