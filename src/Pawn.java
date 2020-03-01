@@ -4,7 +4,7 @@ import java.util.Map;
 
 public class Pawn extends ChessPiece {
     String color; int x_pos; int y_pos;
-    boolean notMoved;
+    boolean notMoved; String type;
     List<ChessPosition<Integer>> moves;
     public Pawn(String color, int x_pos, int y_pos) {
         this.color = color;
@@ -12,6 +12,7 @@ public class Pawn extends ChessPiece {
         this.y_pos = y_pos;
         notMoved=true;
         moves=new LinkedList<>();
+        type=toString();
     }
     //methods
 
