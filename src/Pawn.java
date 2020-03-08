@@ -35,7 +35,7 @@ public class Pawn extends ChessPiece {
         }
         else{
             if(notMoved) return ((x_pos == this.x_pos + 1 && y_pos==this.y_pos) || (x_pos==this.x_pos+2 && y_pos==this.y_pos) || (x_pos==this.x_pos+1 && y_pos==this.y_pos-1) || (x_pos==this.x_pos+1 && y_pos==this.y_pos+1));
-            return return ((x_pos == this.x_pos + 1 && y_pos==this.y_pos)  || (x_pos==this.x_pos+1 && y_pos==this.y_pos-1) || (x_pos==this.x_pos+1 && y_pos==this.y_pos+1));
+            return  ((x_pos == this.x_pos + 1 && y_pos==this.y_pos)  || (x_pos==this.x_pos+1 && y_pos==this.y_pos-1) || (x_pos==this.x_pos+1 && y_pos==this.y_pos+1));
         }
     }
 
