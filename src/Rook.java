@@ -15,9 +15,19 @@ public class Rook extends ChessPiece{
         captured=false;
         moves=new LinkedList<>();
     }
-    public void move(int x_pos1, int y_pos1){
-        x_pos=x_pos1;
-        y_pos=y_pos1;
+    //move(), method that verifies if a pawn has legal move and updates its current position.
+    public void move(int x_pos1, int y_pos1)throws Exception{
+        //check if its a legal move.
+        if(isLegal(x_pos1, y_pos1)) {
+            x_pos = x_pos1;
+            y_pos = y_pos1;
+        }
+        else throw new Exception("Illegal move.");
+    }
+    //method to check if a position is a legal one for the piece
+    public boolean isLegal(int x_pos, int y_pos){
+        //TODO
+        return false;
     }
     public void updateMoves(Integer x_pos, Integer y_pos){
         moves.add(new ChessPosition(x_pos,y_pos));

@@ -25,7 +25,7 @@ public class Pawn extends ChessPiece {
             x_pos = x_pos1;
             y_pos = y_pos1;
         }
-        else throw new Exception("Illegal move."); 
+        else throw new Exception("Illegal move.");
     }
     //method to check if a position is a legal one for the piece
     public boolean isLegal(int x_pos, int y_pos){
@@ -34,7 +34,8 @@ public class Pawn extends ChessPiece {
             return ((x_pos == this.x_pos - 1 && y_pos==this.y_pos) || (x_pos==this.x_pos-1 && y_pos==this.y_pos-1) || (x_pos==this.x_pos-1 && y_pos==this.y_pos+1));
         }
         else{
-            return false;
+            if(notMoved) return ((x_pos == this.x_pos + 1 && y_pos==this.y_pos) || (x_pos==this.x_pos+2 && y_pos==this.y_pos) || (x_pos==this.x_pos+1 && y_pos==this.y_pos-1) || (x_pos==this.x_pos+1 && y_pos==this.y_pos+1));
+            return return ((x_pos == this.x_pos + 1 && y_pos==this.y_pos)  || (x_pos==this.x_pos+1 && y_pos==this.y_pos-1) || (x_pos==this.x_pos+1 && y_pos==this.y_pos+1));
         }
     }
 
