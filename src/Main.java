@@ -60,4 +60,15 @@ public class Main {
             chessboard[cp.x][ cp.y] = pawn.color+" "+pawn.type;
         }
     }
+
+    /**
+     * Minimax search algorithm()
+     * Recursively search the tree of all possible moves is to be explored to a given depth, and
+     * the position is evaluated at the "leaves" of the tree.
+     * Return either the smallest or largest value of the child to teh parent node, depending on whether its a white or black move.
+     */
+    public static int minimax(int depth, int nodeIndex, boolean isMax, int[] scores, int h){
+        //TODO
+        return -1; 
+    }
 }
