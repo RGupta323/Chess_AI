@@ -1,14 +1,14 @@
 import java.util.LinkedList;
 
-public class Knight extends ChessPiece{
+public class King extends ChessPiece{
     //instance variables
-        int x_pos;
-        int y_pos;
-        String color;
-        boolean captured;
-        LinkedList<ChessPosition<Integer>> moves;
-        String type;
-    public Knight(String color, int x_pos, int y_pos){
+    int x_pos;
+    int y_pos;
+    String color;
+    boolean captured;
+    LinkedList<ChessPosition<Integer>> moves;
+    String type;
+    public King(String color, int x_pos, int y_pos){
         this.color=color;
         this.x_pos=x_pos;
         this.y_pos=y_pos;
@@ -47,6 +47,6 @@ public class Knight extends ChessPiece{
 
     @Override
     public String toString() {
-        return color+" "+"Knight";
+        return color+" "+"King";
     }
 }

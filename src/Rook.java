@@ -25,6 +25,8 @@ public class Rook extends ChessPiece{
         else throw new Exception("Illegal move.");
     }
     //method to check if a position is a legal one for the piece
+    //for a rook, it can move infinitely in horizontally or vertically but it is up to other classes in this project to determien if there is a peice there or not.
+    //this is a simple precautionary measure.
     public boolean isLegal(int x_pos, int y_pos){
         //TODO
         return false;
