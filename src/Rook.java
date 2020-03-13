@@ -29,6 +29,20 @@ public class Rook extends ChessPiece{
     //this is a simple precautionary measure.
     public boolean isLegal(int x_pos, int y_pos){
         //TODO
+        //if the color is black,
+        if(color=="black" || color.equals("black")){
+            for(int i=1; i<8; i++){
+                if(this.x_pos-i==x_pos && y_pos==this.y_pos) return true;
+                if(this.x_pos==x_pos && this.y_pos-i==y_pos) return true;
+            }
+        }
+        //if the color is white, then its going up the board (you add the position)
+        else{
+            for(int i=1; i<8; i++){
+                if(this.x_pos+i==x_pos && y_pos==this.y_pos) return true;
+                if(this.x_pos==x_pos && this.y_pos+i==y_pos) return true;
+            }
+        }
         return false;
     }
     public void updateMoves(Integer x_pos, Integer y_pos){

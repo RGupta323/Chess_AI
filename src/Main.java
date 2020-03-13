@@ -69,6 +69,6 @@ public class Main {
      */
     public static int minimax(int depth, int nodeIndex, boolean isMax, int[] scores, int h){
         //TODO
-        return -1; 
+        return -1;
     }
 }
